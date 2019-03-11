@@ -1,4 +1,5 @@
 import pandas as pd
+import matplotlib.pyplot as plt
 
 #convention to call dataframe df
 df=pd.read_csv("dataset/avocado.csv")
@@ -28,5 +29,7 @@ print(albany_df.head())
 # albany_df.set_index("Date",inplace=True)
 # print(albany_df.head())
 
-print(albany_df.plot())
-print(albany_df['AveragePrice'].plot())
+albany_df.plot()
+plt.show()
+albany_df['AveragePrice'].plot()
+plt.show()
